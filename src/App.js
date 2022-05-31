@@ -20,7 +20,7 @@ const App = (props) => {
 
       <form onSubmit={addNote}>
         <input />
-        <button type="submit">Save</button>
+        <button type="submit">Save Test</button>
       </form>
     </div>
   );
