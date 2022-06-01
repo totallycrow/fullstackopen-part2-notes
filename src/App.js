@@ -20,7 +20,7 @@ const App = (props) => {
 
       <form onSubmit={addNote}>
         <input />
-        <button type="submit">Save Test</button>
+        <button type="submit">Save Test from Remote</button>
       </form>
     </div>
   );
