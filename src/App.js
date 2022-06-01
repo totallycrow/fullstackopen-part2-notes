@@ -27,6 +27,7 @@ const App = () => {
 
   // *****************************
 
+  // Form Handler
   const addRecord = (event) => {
     event.preventDefault();
 
@@ -39,21 +40,12 @@ const App = () => {
     setNewName("");
   };
 
-  // const recordsToShow =
-  //   filter === ""
-  //     ? persons
-  //     : persons.filter((person) =>
-  //         person.name.toUpperCase().includes(filter.toUpperCase())
-  //       );
-
   return (
     <div>
       <h2>Phonebook</h2>
-
       <Filter filter={filter} onFilterChange={onFilterChange} />
 
       <h2>Add New</h2>
-
       <PersonForm
         addRecord={addRecord}
         newName={newName}

@@ -8,13 +8,15 @@ export default function Persons({ filter, persons }) {
           person.name.toUpperCase().includes(filter.toUpperCase())
         );
 
-  <ul>
-    {recordsToShow.map((person) => (
-      <li key={person.name}>
-        {person.name} {person.number}
-      </li>
-    ))}
-  </ul>;
-
-  return <div>Persons</div>;
+  return (
+    <div>
+      <ul>
+        {recordsToShow.map((person) => (
+          <li key={person.name}>
+            {person.name} {person.number}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
